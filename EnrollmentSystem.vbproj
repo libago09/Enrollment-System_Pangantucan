@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{52EE2014-870A-4DEA-B793-BB7C8AE89D61}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>EnrollmentSystem.My.MyApplication</StartupObject>
+    <RootNamespace>EnrollmentSystem</RootNamespace>
+    <AssemblyName>EnrollmentSystem</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>EnrollmentSystem.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>EnrollmentSystem.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.16.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\MySQL\Connector NET 8.0\Assemblies\v4.5.2\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="dbconfig.vb" />
+    <Compile Include="EnrollmentSystemDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EnrollmentSystemDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Input B[TJ] - Academic Record\formAcademicRecord.Designer.vb">
+      <DependentUpon>formAcademicRecord.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Input B[TJ] - Academic Record\formAcademicRecord.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Input A[JB] - Student Profile Information\formAdmission.Designer.vb">
+      <DependentUpon>formAdmission.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Input A[JB] - Student Profile Information\formAdmission.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Input A[JB] - Student Profile Information\formAdmissionRecordView.Designer.vb">
+      <DependentUpon>formAdmissionRecordView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Input A[JB] - Student Profile Information\formAdmissionRecordView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Input A[JB] - Student Profile Information\formAdmissionSelection.Designer.vb">
+      <DependentUpon>formAdmissionSelection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Input A[JB] - Student Profile Information\formAdmissionSelection.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Input B[TJ] - Academic Record\formEnrollingStudent.Designer.vb">
+      <DependentUpon>formEnrollingStudent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Input B[TJ] - Academic Record\formEnrollingStudent.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Input A[JB] - Student Profile Information\formFacultyAdmission.Designer.vb">
+      <DependentUpon>formFacultyAdmission.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Input A[JB] - Student Profile Information\formFacultyAdmission.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Input A[JB] - Student Profile Information\formSettingsSelection.Designer.vb">
+      <DependentUpon>formSettingsSelection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Input A[JB] - Student Profile Information\formSettingsSelection.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Input A[JB] - Student Profile Information\formStatus.Designer.vb">
+      <DependentUpon>formStatus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Input A[JB] - Student Profile Information\formStatus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.vb">
+      <DependentUpon>login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loginWindow.Designer.vb">
+      <DependentUpon>loginWindow.vb</DependentUpon>
+    </Compile>
+    <Compile Include="loginWindow.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="sql.vb" />
+    <Compile Include="Input A[JB] - Student Profile Information\userDashboard.Designer.vb">
+      <DependentUpon>userDashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Input A[JB] - Student Profile Information\userDashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Input B[TJ] - Academic Record\formAcademicRecord.resx">
+      <DependentUpon>formAcademicRecord.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Input A[JB] - Student Profile Information\formAdmission.resx">
+      <DependentUpon>formAdmission.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Input A[JB] - Student Profile Information\formAdmissionRecordView.resx">
+      <DependentUpon>formAdmissionRecordView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Input A[JB] - Student Profile Information\formAdmissionSelection.resx">
+      <DependentUpon>formAdmissionSelection.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Input B[TJ] - Academic Record\formEnrollingStudent.resx">
+      <DependentUpon>formEnrollingStudent.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Input A[JB] - Student Profile Information\formFacultyAdmission.resx">
+      <DependentUpon>formFacultyAdmission.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Input A[JB] - Student Profile Information\formSettingsSelection.resx">
+      <DependentUpon>formSettingsSelection.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Input A[JB] - Student Profile Information\formStatus.resx">
+      <DependentUpon>formStatus.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginWindow.resx">
+      <DependentUpon>loginWindow.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Input A[JB] - Student Profile Information\userDashboard.resx">
+      <DependentUpon>userDashboard.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="EnrollmentSystemDataSet.xsc">
+      <DependentUpon>EnrollmentSystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EnrollmentSystemDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EnrollmentSystemDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EnrollmentSystemDataSet.xss">
+      <DependentUpon>EnrollmentSystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\check-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\x-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\male-avatar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\reservation-icon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\enrollment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\logout.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\archive1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loghistory.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admission2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="EnrollmentSystem.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\delete2.png" />
+    <None Include="Resources\coldelete.png" />
+    <None Include="Resources\print.png" />
+    <None Include="Resources\16.png" />
+    <None Include="Resources\addnew.png" />
+    <None Include="Resources\clear.png" />
+    <None Include="Resources\requirements11.png" />
+    <None Include="Resources\folder-users-icon1.png" />
+    <None Include="Images\PCHS_Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Output A[Marco] - Summary\" />
+    <Folder Include="Output B[Neil] - Student%27s Record for Printing\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
