@@ -167,7 +167,7 @@ Partial Class formAcademicRecord
         Me.DataGridView1.Location = New System.Drawing.Point(0, 91)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
-        Me.DataGridView1.Size = New System.Drawing.Size(955, 349)
+        Me.DataGridView1.Size = New System.Drawing.Size(402, 182)
         Me.DataGridView1.TabIndex = 3
         '
         'colStudID
