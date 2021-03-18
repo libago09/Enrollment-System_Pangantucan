@@ -164,10 +164,10 @@ Partial Class formAcademicRecord
         Me.DataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.colStudID, Me.colStudName, Me.colStudStr, Me.coldStudSection, Me.colStudStatus, Me.colStudGradeLevel, Me.colStudSchYear})
-        Me.DataGridView1.Location = New System.Drawing.Point(0, 91)
+        Me.DataGridView1.Location = New System.Drawing.Point(215, 177)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
-        Me.DataGridView1.Size = New System.Drawing.Size(402, 182)
+        Me.DataGridView1.Size = New System.Drawing.Size(527, 234)
         Me.DataGridView1.TabIndex = 3
         '
         'colStudID
